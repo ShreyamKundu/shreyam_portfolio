@@ -1,78 +1,3 @@
-// "use client"
-
-// import { useState } from "react"
-// import { Card, CardContent } from "@/components/ui/card"
-// import { Badge } from "@/components/ui/badge"
-// import { Button } from "@/components/ui/button"
-// import { Sparkles } from "lucide-react"
-// import {
-//   SiReact,
-//   SiNextdotjs,
-//   SiTypescript,
-//   SiNodedotjs,
-//   SiPostgresql,
-//   SiTailwindcss,
-//   SiGraphql,
-//   SiDocker,
-//   SiGit,
-//   SiJavascript,
-//   SiPython,
-// } from "react-icons/si"
-
-// export default function AboutSection() {
-//   const [techStack] = useState([
-//     { name: "React", icon: <SiReact className="h-6 w-6 text-[#61DAFB]" /> },
-//     { name: "Next.js", icon: <SiNextdotjs className="h-6 w-6 text-white" /> },
-//     { name: "TypeScript", icon: <SiTypescript className="h-6 w-6 text-[#3178C6]" /> },
-//     { name: "Node.js", icon: <SiNodedotjs className="h-6 w-6 text-[#339933]" /> },
-//     { name: "PostgreSQL", icon: <SiPostgresql className="h-6 w-6 text-[#4169E1]" /> },
-//     { name: "Tailwind", icon: <SiTailwindcss className="h-6 w-6 text-[#06B6D4]" /> },
-//     { name: "GraphQL", icon: <SiGraphql className="h-6 w-6 text-[#E10098]" /> },
-//     { name: "Docker", icon: <SiDocker className="h-6 w-6 text-[#2496ED]" /> },
-//     { name: "Git", icon: <SiGit className="h-6 w-6 text-[#F05032]" /> },
-//     { name: "JavaScript", icon: <SiJavascript className="h-6 w-6 text-[#F7DF1E]" /> },
-//     { name: "Python", icon: <SiPython className="h-6 w-6 text-[#3776AB]" /> },
-//   ])
-
-//   return (
-//     <section className="py-16" style={{ backgroundColor: "#000319" }}>
-//       <div className="container mx-auto px-4">
-//         <h2 className="text-4xl font-bold mb-12 text-center text-purple">
-//           About Me
-//         </h2>
-//         <div className="grid md:grid-cols-2 gap-12 items-start">
-//           <div className="space-y-6 bg-[#010626] p-6 rounded-lg shadow-lg border border-[#0a1a4d]">
-//             <p className="text-lg text-gray-300 leading-relaxed">
-//               I'm a passionate full-stack developer with a love for creating efficient, scalable, and user-friendly web applications. With a strong foundation in modern web technologies, I strive to build innovative solutions that make a positive impact.
-//             </p>
-//             <p className="text-lg text-gray-300 leading-relaxed">
-//               My expertise spans both front-end and back-end development, allowing me to craft comprehensive solutions from concept to deployment. I'm always eager to take on new challenges and expand my skill set in this ever-evolving field.
-//             </p>
-//             <Button size="lg" className="mt-6 bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600 text-white border-0 transition-all duration-300">
-//               <Sparkles className="mr-2 h-5 w-5" /> Resume
-//             </Button>
-//           </div>
-//           <div className="bg-[#010626] p-6 rounded-lg shadow-lg border border-[#0a1a4d]">
-//             <h3 className="text-2xl font-semibold mb-6 text-gray-200">My Tech Stack</h3>
-//             <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-3 lg:grid-cols-4 gap-3">
-//               {techStack.map((tech, index) => (
-//                 <Card key={index} className="bg-[#13162D] border-0 overflow-hidden">
-//                   <CardContent className="p-2 flex flex-col items-center justify-center">
-//                     <div className="mb-1">{tech.icon}</div>
-//                     <Badge variant="secondary" className="bg-[#13162D] text-gray-300 text-xs px-1.5 py-0.5 whitespace-nowrap overflow-hidden text-ellipsis max-w-full">
-//                       {tech.name}
-//                     </Badge>
-//                   </CardContent>
-//                 </Card>
-//               ))}
-//             </div>
-//           </div>
-//         </div>
-//       </div>
-//     </section>
-//   )
-// }
-
 "use client";
 
 import { useState } from "react";
@@ -157,7 +82,7 @@ export default function AboutSection() {
         <div className="grid md:grid-cols-2 gap-12 items-start">
           <div className="space-y-6 p-6 rounded-xl shadow-lg border border-[#131b36]">
             <p className="text-lg text-gray-300 leading-relaxed">
-              I'm a passionate full-stack developer with a love for creating
+              I&apos;m a passionate full-stack developer with a love for creating
               efficient, scalable, and user-friendly web applications. With a
               strong foundation in modern web technologies, I strive to build
               innovative solutions that make a positive impact.
@@ -165,7 +90,7 @@ export default function AboutSection() {
             <p className="text-lg text-gray-300 leading-relaxed">
               My expertise spans both front-end and back-end development,
               allowing me to craft comprehensive solutions from concept to
-              deployment. I'm always eager to take on new challenges and expand
+              deployment. I&apos;m always eager to take on new challenges and expand
               my skill set in this ever-evolving field.
             </p>
             <Button
