@@ -4,35 +4,33 @@
 
 // import { projects } from "@/data";
 // import { PinContainer } from "./ui/Pin";
+// import bg from "@/public/bg.png";
 
 // const RecentProjects = () => {
 //   return (
-//     <div className="py-20">
+//     <div className="py-20 w-full">
 //       <h1 className="text-4xl text-center font-bold">
 //         A small selection of{" "}
 //         <span className="text-purple">recent projects</span>
 //       </h1>
-//       <div className="flex flex-wrap items-center justify-center p-4 gap-16 mt-10">
+//       <div className="flex flex-wrap items-center justify-center p-4 gap-20 mt-10">
 //         {projects.map((item) => (
 //           <div
 //             className="lg:min-h-[32.5rem] h-[25rem] flex items-center justify-center sm:w-96 w-[80vw]"
 //             key={item.id}
 //           >
-//             <PinContainer
-//               title="/ui.aceternity.com"
-//               href="https://twitter.com/mannupaaji"
-//             >
+//             <PinContainer>
 //               <div className="relative flex items-center justify-center sm:w-96 w-[80vw] overflow-hidden h-[20vh] lg:h-[30vh] mb-10">
 //                 <div
-//                   className="relative w-full h-full overflow-hidden lg:rounded-3xl"
+//                   className="relative w-full h-full overflow-hidden lg:rounded-3xl "
 //                   style={{ backgroundColor: "#13162D" }}
 //                 >
-//                   <img src="/bg.png" alt="bgimg" />
+//                   <img src={bg.src} alt="bgimg"/>
 //                 </div>
 //                 <img
 //                   src={item.img}
 //                   alt="cover"
-//                   className="z-10 absolute bottom-0"
+//                   className="z-10 absolute bottom-0 rounded-b-2xl object-cover w-full h-[15vh] lg:h-[27vh]"
 //                 />
 //               </div>
 
@@ -41,7 +39,7 @@
 //               </h1>
 
 //               <p
-//                 className="lg:text-xl lg:font-normal font-light text-sm line-clamp-2"
+//                 className="lg:text-xl lg:font-normal font-light text-sm "
 //                 style={{
 //                   color: "#BEC1DD",
 //                   margin: "1vh 0",
@@ -66,10 +64,12 @@
 //                 </div>
 
 //                 <div className="flex justify-center items-center">
-//                   <p className="flex lg:text-xl md:text-xs text-sm text-purple">
+//                   <a  href={item.link}
+//                     target="_blank"
+//                     rel="noopener noreferrer"
+//                     className="flex lg:text-xl md:text-xs text-sm text-purple">
 //                     Check Live Site
-//                   </p>
-//                   {/* <FaLocationArrow className="ms-3" color="#CBACF9" /> */}
+//                   </a>
 //                 </div>
 //               </div>
 //             </PinContainer>
@@ -83,12 +83,14 @@
 // export default RecentProjects;
 
 
+
 "use client";
 
 // import { FaLocationArrow } from "react-icons/fa6";
 
 import { projects } from "@/data";
 import { PinContainer } from "./ui/Pin";
+import bg from "@/public/bg.png";
 
 const RecentProjects = () => {
   return (
@@ -103,18 +105,12 @@ const RecentProjects = () => {
             className="lg:min-h-[32.5rem] h-[25rem] flex items-center justify-center sm:w-96 w-[80vw]"
             key={item.id}
           >
-            <PinContainer href="https://twitter.com/mannupaaji">
-              <div className="relative flex items-center justify-center sm:w-96 w-[80vw] overflow-hidden h-[20vh] lg:h-[30vh] mb-10">
-                <div
-                  className="relative w-full h-full overflow-hidden lg:rounded-3xl"
-                  style={{ backgroundColor: "#13162D" }}
-                >
-                  <img src="/bg.png" alt="bgimg" />
-                </div>
+            <PinContainer>
+              <div className="flex items-center justify-center sm:w-96 w-[80vw] overflow-hidden h-[20vh] lg:h-[30vh] mb-10">
                 <img
                   src={item.img}
                   alt="cover"
-                  className="z-10 absolute bottom-0"
+                  className="rounded-2xl object-cover w-full  lg:h-[27vh]"
                 />
               </div>
 
@@ -123,7 +119,7 @@ const RecentProjects = () => {
               </h1>
 
               <p
-                className="lg:text-xl lg:font-normal font-light text-sm line-clamp-2"
+                className="lg:text-xl lg:font-normal font-light text-sm "
                 style={{
                   color: "#BEC1DD",
                   margin: "1vh 0",
@@ -148,10 +144,12 @@ const RecentProjects = () => {
                 </div>
 
                 <div className="flex justify-center items-center">
-                  <p className="flex lg:text-xl md:text-xs text-sm text-purple">
+                  <a  href={item.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex lg:text-xl md:text-xs text-sm text-purple">
                     Check Live Site
-                  </p>
-                  {/* <FaLocationArrow className="ms-3" color="#CBACF9" /> */}
+                  </a>
                 </div>
               </div>
             </PinContainer>
@@ -163,3 +161,4 @@ const RecentProjects = () => {
 };
 
 export default RecentProjects;
+
